@@ -1,0 +1,100 @@
+/* ## Main module
+   --------------------------------------------------------------------- */
+
+.main {
+  padding: em(8);
+  background-color: darken($color: $dark-gunmetal, $amount: 5);
+  @include flex($dir: column, $gap: 0);
+
+  &__item {
+    width: calc(100% - 2em);
+    height: auto;
+    margin: em(8) em(16);
+    background-color: $dark-gunmetal;
+    @include flex($dir: row, $align-items: center);
+    @include media(tablet-portrait) {
+      height: calc(100% + 100px);
+    }
+    @include media(phone) {
+      @include flex($dir: column, $gap: 0);
+    }
+    .col--content {
+      width: 80%;
+      height: 100%;
+      padding: em(16);
+      @include flex($dir: column);
+      @include media(phone) {
+        padding: 0 em(16) em(16) em(16);
+        @include flex($dir: column, $gap: 0);
+        .row:not(:nth-child(1), .row--show-in-all-screen) {
+          display: none;
+        }
+      }
+
+      .row {
+        width: 100%;
+      }
+      .row--show-in-all-screen {
+        margin-top: em(16);
+        align-self: flex-end;
+        @include media(phone) {
+          margin-top: 0;
+          text-align: center;
+        }
+        .label {
+          margin: em(32) em(16);
+        }
+      }
+    }
+    .poster {
+      width: 193px;
+      height: 290px;
+      margin: em(16);
+    }
+    .movie-name {
+      color: $bright-gray;
+      @include typography('label');
+      @include media(phone) {
+        display: block;
+        text-align: center;
+      }
+    }
+    .label {
+      margin: 0 em(16);
+      font-size: em(12);
+      color: $Spanish-gray;
+    }
+    .value,
+    .value--bg {
+      font-size: em(12);
+      color: $bright-gray;
+    }
+    .value--bg {
+      width: 100%;
+      padding: em(14);
+      display: inline-block;
+      line-height: em(24);
+      background-color: darken($color: $dark-gunmetal, $amount: 5);
+    }
+    .btn {
+      float: left;
+      width: auto;
+      padding: em(8);
+      border: 1px solid $button-blue;
+      border-radius: 3px;
+      color: $button-blue;
+      text-align: center;
+      transition: color, background-color 250ms ease-in;
+
+      @include media(custom, 1px, 768px) {
+        width: 100%;
+        display: block;
+        margin-top: 1em;
+      }
+      &:hover {
+        color: $bright-gray;
+        background-color: $button-blue;
+      }
+    }
+  }
+}

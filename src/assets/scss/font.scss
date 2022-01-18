@@ -1,0 +1,20 @@
+@import 'base/vars';
+@import 'base/mixin';
+
+// Import internal font if defined
+@if variable-exists(font-url--internal-eot) {
+  @each $i, $weight in $font-weights {
+    @include font-face(
+      $font-family,
+      $weight,
+      $font-url--internal-eot,
+      null,
+      $font-url--internal-woff,
+      $font-url--internal-woff2
+    );
+  }
+}
+
+* {
+  font-family: $font-family, sans-serif;
+}
