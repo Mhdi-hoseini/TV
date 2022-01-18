@@ -1,3 +1,6 @@
 node_modules
 src/assets/img
 src/assets/font
+.firebase/
+.firebaserc
+firebase.json
