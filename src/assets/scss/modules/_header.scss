@@ -1,0 +1,25 @@
+/* ## Header module
+   --------------------------------------------------------------------- */
+
+.header {
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  padding: 8px 16px;
+  position: fixed;
+  z-index: 1;
+  transition: top 500ms;
+  filter: opacity(0.95);
+  background: $chinese-black;
+  @include flex($justify-content: space-between, $align-items: center);
+
+  .logo {
+    width: 96px;
+    padding: 0;
+    text-align: initial;
+    max-height: 48px;
+    @include media(phone) {
+      height: 32px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+/* ## Variables
+   --------------------------------------------------------------------- */
+   
+//  Colors
+$black: #000;
+$chinese-black: #101014;
+$dark-gunmetal: #23232b;
+$Spanish-gray: #8e939b;
+$lavender-gray: #c2c7cb;
+$bright-gray: #e8eaf0;
+$button-blue: #2196f3;
+$cornflower-blue: #6898f8;
+
+// Typography
+$font-url--internal-eot: '/src/assets/font/vazir.eot';
+$font-url--internal-woff: '/src/assets/font/vazir.woff';
+$font-url--internal-woff2: '/src/assets/font/vazir.woff2';
+$font-family: 'vazir';
+$font-family--secondary: sans-serif;
+$font-sizes: (
+  'body': 1em,
+  'label': 0.875em,
+);
+$font-weights: (
+  1: normal,
+  2: bold,
+);
+
+// Base size unit
+$browser-context: 16;

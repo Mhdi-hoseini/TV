@@ -1,0 +1,10 @@
+/* ## Basic style for tags
+   --------------------------------------------------------------------- */
+
+* {
+  user-select: none;
+}
+html,
+body {
+  @include hide-scrollbar;
+}

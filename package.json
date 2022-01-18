@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "cphtml": "cp src/index.html dist/",
+    "cpimg": "cp src/assets/img/* dist/assets/img/",
     "cpages": "cp src/pages/* dist/pages/",
     "cpfont": "cp src/assets/font/* dist/assets/font/",
     "sass": "sass src/assets/scss:src/assets/css",
@@ -13,7 +14,7 @@
     "cleancss": "node tools/clean-css.js",
     "cleancssw": "cleancss -O2 src/assets/css/style.css -o dist/assets/css/style.min.css --watch",
     "uglifyjs": "node tools/uglify-js.js",
-    "build": "npm-run-all cphtml cpages cpfont sass cleancss uglifyjs"
+    "build": "npm-run-all cphtml cpimg cpfont sass cleancss uglifyjs"
   },
   "license": "MIT",
   "devDependencies": {
