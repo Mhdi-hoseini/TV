@@ -2,18 +2,22 @@
    --------------------------------------------------------------------- */
 
 .offer__container {
+  height: auto;
   max-width: 100%;
-  height: 100vh;
-  padding: 14vh em(16) em(16) em(16);
+  margin: 1em;
+  padding-top: 68px;
   display: grid;
   overflow-x: scroll;
   overflow-y: hidden;
   grid-template-columns: repeat(4, 314px);
-  grid-template-rows: repeat(3, 1fr);
-  justify-content: center;
+  grid-template-rows: repeat(3, 180px);
   background-color: $chinese-black;
+  align-content: center;
   gap: em(8);
   @include hide-scrollbar;
+  @include media(large-desktop) {
+    justify-content: center;
+  }
 
   .offer__item {
     border-radius: 3px;
@@ -25,8 +29,9 @@
     }
     .poster {
       width: 100%;
-      height: 100%;
+      height: auto;
       border-radius: 3px;
+      object-fit: cover;
     }
     &:hover span {
       display: inline;
@@ -47,7 +52,7 @@
         height: 14px;
         float: right;
         margin-left: 4px;
-        @include bg-img('/src/assets/img/like.svg');
+        @include bg-img('/assets/img/like.svg');
       }
     }
     .imdb-rate {

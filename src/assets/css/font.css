@@ -3,13 +3,13 @@
 /* ## Mixins
    --------------------------------------------------------------------- */
 @font-face {
-  src: url("/src/assets/font/vazir.eot") format("eot"), url("/src/assets/font/vazir.woff") format("woff"), url("/src/assets/font/vazir.woff2") format("woff2");
+  src: url("/assets/font/vazir.eot") format("eot"), url("/assets/font/vazir.woff") format("woff"), url("/assets/font/vazir.woff2") format("woff2");
   font-family: "vazir";
   font-weight: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("/src/assets/font/vazir.eot") format("eot"), url("/src/assets/font/vazir.woff") format("woff"), url("/src/assets/font/vazir.woff2") format("woff2");
+  src: url("/assets/font/vazir.eot") format("eot"), url("/assets/font/vazir.woff") format("woff"), url("/assets/font/vazir.woff2") format("woff2");
   font-family: "vazir";
   font-weight: bold;
   font-display: swap;

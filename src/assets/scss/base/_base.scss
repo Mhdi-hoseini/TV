@@ -7,4 +7,5 @@
 html,
 body {
   @include hide-scrollbar;
+  background-color: $chinese-black;
 }

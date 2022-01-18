@@ -24,10 +24,14 @@
       padding: em(16);
       @include flex($dir: column);
       @include media(phone) {
+        width: 90%;
         padding: 0 em(16) em(16) em(16);
         @include flex($dir: column, $gap: 0);
-        .row:not(:nth-child(1), .row--show-in-all-screen) {
+        .row:not(:nth-child(1)) {
           display: none;
+        }
+        .row--show-in-all-screen {
+          display: block !important;
         }
       }
 
@@ -41,8 +45,10 @@
           margin-top: 0;
           text-align: center;
         }
-        .label {
-          margin: em(32) em(16);
+        @include media(custom, 1px, 400px) {
+          .label:nth-child(2) {
+            display: none !important;
+          }
         }
       }
     }

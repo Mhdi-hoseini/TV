@@ -35,7 +35,7 @@
     position: absolute;
     transform: translateY(-50%);
     vertical-align: middle;
-    @include bg-img('/src/assets/img/search.svg');
+    @include bg-img('/assets/img/search.svg');
   }
 }
 @include media(custom, 576px, 1200px) {
