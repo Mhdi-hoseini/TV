@@ -1,0 +1,15 @@
+/* ## State style
+   --------------------------------------------------------------------- */
+
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.showDrawer {
+  animation: showDrawer 500ms ease-out forwards;
+}

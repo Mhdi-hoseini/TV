@@ -1,0 +1,144 @@
+/* ## Navigation module
+   --------------------------------------------------------------------- */
+
+// Show navigation on toolbar in large screen
+@include media(large-desktop) {
+  #drawer-toggle {
+    display: none;
+  }
+  .navigation {
+    max-width: 70%;
+    max-height: 100%;
+    overflow-x: clip;
+    white-space: nowrap;
+    @include hide-scrollbar;
+
+    ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    ul > li {
+      height: 100%;
+      padding-right: em(16);
+      display: inline-block;
+    }
+    li.has-submenu {
+      position: relative;
+      &:hover .submenu {
+        display: block;
+      }
+      &.submenu:hover {
+        display: block;
+      }
+      .submenu-btn {
+        display: inline-block;
+      }
+      .submenu-btn::after {
+        content: '';
+        width: em(14);
+        height: em(14);
+        margin: 0 em(4);
+        display: inline-block;
+        vertical-align: middle;
+        @include bg-img('/assets/img/caret.svg');
+      }
+    }
+    .submenu {
+      top: em(24);
+      right: em(18);
+      width: 219px;
+      height: auto;
+      padding: em(8) em(16);
+      display: none;
+      position: absolute;
+      background: #101014ed;
+      border-radius: em(5);
+      li {
+        display: block;
+      }
+    }
+    a {
+      line-height: em(32);
+      color: $lavender-gray;
+      @include typography('body');
+    }
+  }
+}
+
+// show navigation on sidebar in small screen
+@include media(custom, 1px, 1200px) {
+  #drawer-toggle {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    @include bg-img('/assets/img/bar.svg');
+  }
+
+  .drawer {
+    top: 0;
+    right: -80%;
+    width: 70vw;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    overflow: auto;
+    background: $dark-gunmetal;
+    @include hide-scrollbar;
+
+    .logo {
+      width: 88px;
+      height: 56px;
+      padding: 16px;
+      box-sizing: content-box;
+      display: block;
+      margin: auto;
+    }
+    ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    ul > li {
+      line-height: em(46);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    ul > li a {
+      padding-right: em(16);
+      display: inline-block;
+      color: $lavender-gray;
+      border-right: 3px solid transparent;
+    }
+    ul > li:active a {
+      color: $bright-gray;
+    }
+    .submenu {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0 em(16);
+      display: none;
+      position: static;
+      background-color: $chinese-black;
+      li {
+        line-height: em(42);
+        border-bottom: none;
+      }
+      li a {
+        padding-right: em(18);
+        color: $lavender-gray;
+        @include typography('body');
+      }
+    }
+    .arrow {
+      width: 14px;
+      height: 14px;
+      margin: em(16);
+      float: left;
+      display: inline;
+      vertical-align: middle;
+      transition: 0.5s;
+      @include bg-img('/assets/img/caret.svg');
+    }
+  }
+}

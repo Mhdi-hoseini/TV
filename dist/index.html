@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/font.min.css" as="font" crossorigin />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <script src="assets/js/app.min.js" defer></script>
+    <title>دان تی وی</title>
+  </head>
+  <body>
+    <header class="header">
+      <button id="drawer-toggle"></button>
+      <img class="logo" src="assets/img/logo.svg" alt="دان تی وی" />
+      <nav class="nav navigation drawer">
+        <ul>
+          <li class="has-submenu">
+            <a href="#" class="submenu-btn">فیلم خارجی</a>
+            <i class="arrow"></i>
+            <ul class="submenu">
+              <li><a href="#">اکشن</a></li>
+              <li><a href="#">ترسناک</a></li>
+              <li><a href="#">کمدی</a></li>
+              <li><a href="#">هندی</a></li>
+              <li><a href="#">تخیلی</a></li>
+              <li><a href="#">درام</a></li>
+              <li><a href="#">خانوادگی</a></li>
+              <li><a href="#">ماجراجویی</a></li>
+              <li><a href="#">رزمی</a></li>
+              <li><a href="#">هیجان انگیز</a></li>
+              <li><a href="#">همه فیلم های خارجی</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-btn">فیلم ایرانی</a>
+            <i class="arrow"></i>
+            <ul class="submenu">
+              <li><a href="#">اجتماعی</a></li>
+              <li><a href="#">کمدی</a></li>
+              <li><a href="#">ترسناک</a></li>
+              <li><a href="#">دفاع مقدس</a></li>
+              <li><a href="#">خانوادگی</a></li>
+              <li><a href="#">رزمی</a></li>
+              <li><a href="#">همه فیلم های ایرانی</a></li>
+            </ul>
+          </li>
+          <li><a href="#">انیمیشن</a></li>
+          <li><a href="#">سریال خارجی</a></li>
+          <li><a href="#">دوبله فارسی</a></li>
+          <li><a href="#">سریال کره ای</a></li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-btn">بهترین ها</a>
+            <i class="arrow"></i>
+            <ul class="submenu">
+              <li><a href="#">250 فیلم برتر IMDB</a></li>
+              <li><a href="#">کالکشن</a></li>
+              <li><a href="#">ترسناک</a></li>
+              <li><a href="#">به زودی</a></li>
+              <li><a href="#">فیلم های Marvel</a></li>
+              <li><a href="#">فیلم های DC</a></li>
+              <li><a href="#">نوستالژی</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="submenu-btn">سال</a>
+            <i class="arrow"></i>
+            <ul class="submenu">
+              <li><a href="#">2021</a></li>
+              <li><a href="#">2020</a></li>
+              <li><a href="#">2019</a></li>
+              <li><a href="#">2018</a></li>
+              <li><a href="#">2017</a></li>
+              <li><a href="#">2016</a></li>
+              <li><a href="#">2015</a></li>
+              <li><a href="#">2014</a></li>
+              <li><a href="#">2013</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ارتباط با ما</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <span class="search__close">بستن</span>
+        <input
+          class="search__input"
+          type="search"
+          placeholder="کلمه مورد نظر"
+        />
+        <i id="search-toggle"></i>
+      </div>
+    </header>
+    <section class="offer__container">
+      <div class="offer__item">
+        <img
+          src="assets/img/Pelican-Blood-2019-Header.jpg"
+          alt="Pelican Blood"
+          class="poster"
+        />
+        <span class="like">85%</span>
+        <span class="imdb-rate">7.4</span>
+        <span class="movie-name--fa">فیلم خون پلیکان</span>
+        <span class="movie-name--en">Pelikanblut</span>
+        <span class="subtitle">زیرنویس چسبیده</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Neysan-Abi-1-Header.jpg"
+          alt="سریال نیسان ابی"
+          class="poster"
+        />
+        <span class="like">91%</span>
+        <span class="imdb-rate">8.4</span>
+        <span class="movie-name--fa">سریال نیسان ابی</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Bhoot-Police-2021-Header.jpg"
+          alt="Bhoot Police"
+          class="poster"
+        />
+        <span class="like">94%</span>
+        <span class="imdb-rate">8.4</span>
+        <span class="movie-name--fa">فیلم پلیس ارواح</span>
+        <span class="movie-name--en">Bhoot Police</span>
+        <span class="subtitle">زیرنویس چسبیده</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Gheble-Alam-7-Header.jpg"
+          alt="فیلم قبله عالم"
+          class="poster"
+        />
+        <span class="like">91%</span>
+        <span class="imdb-rate">8.1</span>
+        <span class="movie-name--fa">فیلم قبله عالم</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Goorkan-Header.jpg"
+          alt="فیلم گورکن"
+          class="poster"
+        />
+        <span class="like">85%</span>
+        <span class="imdb-rate">7.4</span>
+        <span class="movie-name--fa">فیلم گورکن</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Midan-Sorkh-header.jpg"
+          alt="فیلم میدان سرخ"
+          class="poster"
+        />
+        <span class="like">79%</span>
+        <span class="imdb-rate">7.8</span>
+        <span class="movie-name--fa">فیلم میدان سرخ</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Skydog-2020-Header-Ok.jpg"
+          alt="Skydog"
+          class="poster"
+        />
+        <span class="like">80%</span>
+        <span class="imdb-rate">7.2</span>
+        <span class="movie-name--fa">فیلم سگ خلبان</span>
+        <span class="movie-name--en">Skydog</span>
+        <span class="subtitle">زیرنویس چسبیده</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/The-Many-Saints-of-Newark-2021-Header-1.jpg"
+          alt="The Many Saints of Newark"
+          class="poster"
+        />
+        <span class="like">80%</span>
+        <span class="imdb-rate">8.6</span>
+        <span class="movie-name--fa">فیلم قدیسین شهر نیوآرک</span>
+        <span class="movie-name--en">The Many Saints of Newark</span>
+        <span class="subtitle">زیرنویس چسبیده</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Herfehe-1-Header.jpg"
+          alt="فیلم حرفه ای"
+          class="poster"
+        />
+        <span class="like">89%</span>
+        <span class="imdb-rate">8.4</span>
+        <span class="movie-name--fa">فیلم حرفه ای</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/khoon-Shod-Header.jpg"
+          alt="خون شد"
+          class="poster"
+        />
+        <span class="like">98%</span>
+        <span class="imdb-rate">9.2</span>
+        <span class="movie-name--fa">خون شد</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/Sinkhole-2021-Header-Ok.jpg"
+          alt="Sinkhole"
+          class="poster"
+        />
+        <span class="like">80%</span>
+        <span class="imdb-rate">8.9</span>
+        <span class="movie-name--fa">گودال</span>
+        <span class="movie-name--en">Sinkhole</span>
+        <span class="subtitle">زیرنویس چسبیده</span>
+      </div>
+      <div class="offer__item">
+        <img
+          src="assets/img/South-of-Heaven-2021-Header-Ok.jpg"
+          alt="South of Heaven"
+          class="poster"
+        />
+        <span class="like">87%</span>
+        <span class="imdb-rate">7.6</span>
+        <span class="movie-name--fa">جنوب بهشت</span>
+        <span class="movie-name--en">South of Heaven</span>
+        <span class="subtitle">زیرنویس چسبیده</span>
+      </div>
+    </section>
+    <main class="main">
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+      <section class="main__item">
+        <div class="col">
+          <img
+            src="assets/img/Herfehe-1-193x290.jpg"
+            alt="سریال حرفه ای"
+            class="poster"
+          />
+        </div>
+        <div class="col--content">
+          <div class="row">
+            <h2 class="movie-name">سریال حرفه ای</h2>
+          </div>
+          <div class="row">
+            <span class="label">اجتماعی، اکشن</span>
+            <span class="label">88% رضایت</span>
+          </div>
+          <div class="row">
+            <span class="label">بازیگران</span>
+            <span class="value">علی مصفا، امیرمحمد زند، بهاره کیان افشار</span>
+          </div>
+          <div class="row">
+            <span class="label">کارگردان</span>
+            <span class="value">مصطفی تقی زاده</span>
+          </div>
+          <div class="row">
+            <span class="value--bg">
+              سیامک ماموریتی را به سرانجام می‌رساند. سپس از رییس فرصتی می‌خواهد
+              تا به کاری شخصی رسیدگی کند...
+            </span>
+          </div>
+          <div class="row row--show-in-all-screen">
+            <span class="label">سال انتشار : 1400</span>
+            <span class="label">کشور : ایران</span>
+            <span class="label"> امتیاز : 6.8</span>
+            <a class="btn" href="#">دانلود سریال</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+/* ## Offer module
+   --------------------------------------------------------------------- */
+
+.offer__container {
+  height: auto;
+  max-width: 100%;
+  margin: 1em;
+  padding-top: 68px;
+  display: grid;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  grid-template-columns: repeat(4, 314px);
+  grid-template-rows: repeat(3, 180px);
+  background-color: $chinese-black;
+  align-content: center;
+  gap: em(8);
+  @include hide-scrollbar;
+  @include media(large-desktop) {
+    justify-content: center;
+  }
+
+  .offer__item {
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+
+    &:hover .poster {
+      filter: brightness(0.3);
+    }
+    .poster {
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+      object-fit: cover;
+    }
+    &:hover span {
+      display: inline;
+    }
+    span {
+      display: none;
+      position: absolute;
+    }
+    .like {
+      top: 30px;
+      right: 15px;
+      color: $bright-gray;
+      @include typography('lable');
+
+      &::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        float: right;
+        margin-left: 4px;
+        @include bg-img('/assets/img/like.svg');
+      }
+    }
+    .imdb-rate {
+      top: 30px;
+      right: 72px;
+      color: $bright-gray;
+      @include typography('label');
+
+      &::after {
+        content: 'IMDB';
+        margin-left: 4px;
+        float: right;
+        vertical-align: middle;
+        color: $bright-gray;
+        @include typography('label');
+        font-weight: lighter;
+        font-family: $font-family--secondary;
+      }
+    }
+    .movie-name--fa {
+      top: 58px;
+      right: 16px;
+      font-size: em(20);
+      color: $bright-gray;
+    }
+    .movie-name--en {
+      top: 92px;
+      right: 15px;
+      color: $bright-gray;
+      font-family: $font-family--secondary;
+      @include typography('label');
+    }
+    .subtitle {
+      right: 15px;
+      bottom: 30px;
+      padding: 3px;
+      border: 1px solid orange;
+      color: orange;
+      @include typography('label');
+    }
+  }
+}
